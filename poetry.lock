@@ -35,6 +35,22 @@ tests = ["attrs[tests-no-zope]", "zope.interface"]
 tests-no-zope = ["cloudpickle", "cloudpickle", "hypothesis", "hypothesis", "mypy (>=0.971,<0.990)", "mypy (>=0.971,<0.990)", "pympler", "pympler", "pytest (>=4.3.0)", "pytest (>=4.3.0)", "pytest-mypy-plugins", "pytest-mypy-plugins", "pytest-xdist[psutil]", "pytest-xdist[psutil]"]
 
 [[package]]
+name = "icalendar"
+version = "5.0.4"
+description = "iCalendar parser/generator"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "icalendar-5.0.4-py3-none-any.whl", hash = "sha256:3e759f9c3875e037c90e1c2f4aff0f6123f4435af6152b80a70b8d6a5529cb1b"},
+    {file = "icalendar-5.0.4.tar.gz", hash = "sha256:f0aa86d6f5bc110ed3b91e96c48c70351d7a09fbed25366f673dc0b799c83975"},
+]
+
+[package.dependencies]
+python-dateutil = "*"
+pytz = "*"
+
+[[package]]
 name = "ics"
 version = "0.7.2"
 description = "Python icalendar (rfc5545) parser"
@@ -69,6 +85,18 @@ files = [
 six = ">=1.5"
 
 [[package]]
+name = "pytz"
+version = "2022.7.1"
+description = "World timezone definitions, modern and historical"
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "pytz-2022.7.1-py2.py3-none-any.whl", hash = "sha256:78f4f37d8198e0627c5f1143240bb0206b8691d8d7ac6d78fee88b78733f8c4a"},
+    {file = "pytz-2022.7.1.tar.gz", hash = "sha256:01a0681c4b9684a28304615eba55d1ab31ae00bf68ec157ec3708a8182dbbcd0"},
+]
+
+[[package]]
 name = "six"
 version = "1.16.0"
 description = "Python 2 and 3 compatibility utilities"
@@ -98,4 +126,4 @@ future-regex = ["regex"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "f83f5585696a87bf525c50ce5484b2b2d978f707129879e644a2d92f3c5d8481"
+content-hash = "5e1157d9981324550591fc455b5cdf0bdb838aa72329aaf3c3cbf2e130f7dc4a"
