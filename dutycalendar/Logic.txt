@@ -1,0 +1,8 @@
+Input -> Data -> Logic -> Output
+
+Input = input.py (generates confog.ini)
+Data = config.ini(stores input) + data.py(collects instances)
+Logic = main.py (Generates dates of the work events using the instances)
+Output = to_webcal + to_excel + to_ics etc etc
+
+Utils = stores the classes -schedule.py
